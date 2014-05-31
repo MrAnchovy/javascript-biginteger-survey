@@ -11,7 +11,7 @@ importWrappedJsbn(Container.classes);
 describe("The wrapped jsbn class", function() {
 
     var BigJsbn = Container.classes.BigJsbn;
-    var size = "10000"; // 10000, 100, 40, 20, 10
+    var size = "100"; // 10000, 100, 40, 20, 10
 
     beforeEach(function() {
     });

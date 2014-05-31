@@ -6,7 +6,6 @@
  * @license    MIT, see also LICENSE.jsbn.md
 **/
 
-
 function importWrappedJsbn($classTarget, $staticTarget) {
 
 // Copyright (c) 2005  Tom Wu
@@ -1227,7 +1226,8 @@ BigInteger.prototype.square = bnSquare;
 // static BigInteger valueOf(long val)
 
 
-// MrAnchovy's code to export the common api starts here ======================
+// ============================================================================
+// MrAnchovy's code to export a common api starts here
 
     /**
      * @constructor
@@ -1236,45 +1236,12 @@ BigInteger.prototype.square = bnSquare;
 
     var proto = $classTarget.BigJsbn.prototype;
 
-    proto.add = bnAdd;
-    proto.subtract = bnSubtract;
-    proto.multiply = bnMultiply;
-    proto.div = bnDivide;
-    // proto.mod = bnRemainder;
+    // already defined in legacy code proto.add = bnAdd;
+    // already defined in legacy code proto.subtract = bnSubtract;
+    // already defined in legacy code proto.multiply = bnMultiply;
+    proto.div    = bnDivide;
+    // already defined in legacy code proto.mod = bnMod;
     proto.divmod = bnDivideAndRemainder;
-    proto.clone = bnClone;
 
-    proto.toString = bnToString;
-    proto.negate = bnNegate;
-    proto.abs = bnAbs;
-    proto.compare = bnCompareTo;
-    proto.bitLength = bnBitLength;
-    proto.mod = bnMod;
-    // proto.modPowInt = bnModPowInt;
-
-    proto.signum = bnSigNum;
-    proto.isEqualTo = bnEquals;
-    proto.min = bnMin;
-    proto.max = bnMax;
-    proto.clone = bnClone;
-
-    proto.and = bnAnd;
-    proto.or = bnOr;
-    proto.xor = bnXor;
-    proto.andNot = bnAndNot;
-    proto.not = bnNot;
-    proto.shiftLeft = bnShiftLeft;
-    proto.shiftRight = bnShiftRight;
-    proto.getLowestSetBit = bnGetLowestSetBit;
-    proto.bitCount = bnBitCount;
-    proto.testBit = bnTestBit;
-    proto.setBit = bnSetBit;
-    proto.clearBit = bnClearBit;
-    proto.flipBit = bnFlipBit;
-
-
-    proto.pow = bnPow;
-    proto.gcd = bnGCD;
-    proto.isProbablePrime = bnIsProbablePrime;
-
+    // already defined in legacy code proto.toString = bnToString;
 }
