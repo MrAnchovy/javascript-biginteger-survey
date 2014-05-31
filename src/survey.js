@@ -5,7 +5,7 @@
  * @license    MIT
 **/
 
-Survey = {
+var Survey = {
     VERSION: "0.1.1-dev",
     classes: {}
 };
