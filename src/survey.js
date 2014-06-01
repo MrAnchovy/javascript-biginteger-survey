@@ -12,3 +12,6 @@ var Survey = {
 
 // get Survey.classses.BigJsbn and Survey.Jsbn
 importWrappedJsbn(Survey.classes, Survey);
+
+// get Survey.classses.BigLeemon and Survey.BigLeemon
+importWrappedLeemon(Survey.classes, Survey);
